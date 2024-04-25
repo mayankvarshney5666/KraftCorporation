@@ -42,17 +42,23 @@
 
 .nav {
     background-color: rgb(208, 13, 13);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
 }
 
 .nav-ul {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     list-style: none;
-    color: #fff;
+    margin-left: -35%;
+}
 
-    margin-left: 10%;
-
+.nav-ul li a {
+    color: white;
 }
 
 .home,
@@ -60,9 +66,315 @@
 .products,
 .jobs,
 .contact {
+
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* text-decoration: none; */
     margin: 15px 30px 0 30px;
-    /* margin-top: ;
-    margin-left: 25px;
-    margin-right: 25px; */
 
 }
+
+
+/* <---------------------------------> */
+/* -----------------------------Welcome Part------------------------------- */
+
+.mb20px,
+a.mb20px {
+    margin-bottom: 20px;
+}
+
+.ac {
+    text-align: center;
+}
+
+.mt20px,
+a.mt20px {
+    margin-top: 20px;
+}
+
+.indsu_icon.mc,
+.myTabs.mc,
+.bdr0.mc {
+    border: none;
+}
+
+.lsn li,
+ul.lsn li,
+.slider li {
+    list-style: none;
+    margin: 0;
+}
+
+.ic {
+    padding: 10px;
+}
+
+.mt5px,
+a.mt5px {
+    margin-top: 5px;
+}
+
+#middle .slider {
+    color: #333;
+}
+
+#middle .slider {
+    text-align: center;
+}
+
+.slider {
+    color: #555;
+}
+
+.lh15em {
+    line-height: 1.5em;
+}
+
+
+.dib {
+    display: inline-block;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 5px 0 5px 30px;
+    padding: 0;
+}
+
+#middle .slider ul li {
+    display: inline-block;
+    float: none !important;
+    vertical-align: top;
+}
+
+.comp-info .slider ul li {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    display: inline-block;
+    float: none;
+}
+
+@media (max-width: 1024px) {
+    .horizontal237693 .no-scroll237693 li {
+        width: 33%;
+        box-sizing: border-box;
+    }
+}
+
+.horizontal237693 .no-scroll237693 li {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.horizontal237693 .no-scroll237693 li,
+.horizontal237693 .no-scroll237693.floatLiFommat li {
+    width: 362px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.lsn li,
+ul.lsn li,
+.slider li {
+    list-style: none;
+    margin: 0;
+}
+
+.fact-icon {
+    display: table;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.fact-icon .dtc {
+    display: table-cell;
+}
+
+.w60px {
+    width: 60px;
+}
+
+.iconBox {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+.ei-fact.nature-of-business {
+    background-position: -100px 0px;
+}
+
+.ei-fact {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url(//catalog.wlimg.com/templates-images/12569/12573/fact-stripe.png) no-repeat;
+}
+
+.fact-icon .dtc {
+    display: table-cell;
+}
+
+.pl15px {
+    padding-left: 15px;
+}
+
+.vam {
+    vertical-align: middle;
+}
+
+.lh13em {
+    line-height: 1.3em;
+}
+
+
+.al {
+    text-align: left;
+}
+
+.xlarge {
+    font-size: 1.2em;
+}
+
+.lh14em {
+    line-height: 1.4em;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.al {
+    text-align: left;
+}
+
+.ei-fact.year-of-establishment {
+    background-position: -50px 0px;
+}
+
+.ei-fact.market-covered {
+    background-position: -250px 0px;
+}
+
+
+.vat {
+    vertical-align: top;
+}
+
+b,
+strong {
+    font-weight: bold !important;
+}
+
+.dif a {
+    color: #cc0000;
+}
+
+.large {
+    font-size: 1.1em;
+}
+
+.lh17em {
+    line-height: 1.7em;
+}
+
+.aj {
+    text-align: justify;
+}
+
+.welcome-txt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.welcome-part {
+    margin: 50px;
+    font-size: 16px;
+}
+
+/* ---------------------------Welcome PartEnds------------------------------- */
+/* ---------------------------Contact Deatils------------------------------- */
+.contact-bg {
+    background: #000 url(//catalog.wlimg.com/templates-images/12569/12573/contact-bg.jpg) no-repeat scroll center top;
+    background-size: cover;
+    color: #fff;
+    margin-top: -35px;
+}
+
+@media (max-width: 980px) {
+    .wrap {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+.pr {
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.formTable.bdr0,
+.formTable.bdr0>tbody>tr>td {
+    border: none !important;
+}
+
+.contact-bg td {
+    padding: 30px 10px;
+    width: 25%;
+    vertical-align: top;
+}
+
+.contact-icon {
+    margin-top: 5px;
+    background: #c00;
+    color: #fff;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-size: 18px;
+}
+
+.mb7px,
+a.mb7px {
+    margin-bottom: 7px;
+}
+
+.icon-inner .fa {
+    margin-top: 18px;
+}
+
+
+
+
+
+/* ---------------------------Contact Deatils------------------------------- */
