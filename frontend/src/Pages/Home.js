@@ -1,34 +1,12 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import './styles/Home.css';
 import Corousel from '../components/Corousel';
 import TopProducts from '../components/TopProducts';
+import HomeQuickEnquiry from '../components/HomeQuickEnquiry'
+import HomeFooter from '../components/HomeFooter';
 
 const Home = () => {
-    const [formData, setFormData] = useState({
-        product: '',
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-        country: ''
-    });
-
-    const handleChange = e => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async e => {
-        e.preventDefault();
-        try {
-            await axios.post('http://localhost:5000/inquiries/', formData);
-            alert('Query submitted successfully!');
-        } catch (error) {
-            console.error('Submission Error  :', error);
-        }
-    };
-
     return (
         <>
             <div className="header">
@@ -58,7 +36,7 @@ const Home = () => {
                         </a>
                     </li>|
                     <li className='about'>
-                        <a href="/about-us">
+                        <a href="/about us">
                             About Us
                         </a>
                     </li>|
@@ -74,7 +52,7 @@ const Home = () => {
                         </a>
                     </li>|
                     <li className='contact'>
-                        <a href="/contact-us">
+                        <a href="/contact us">
                             Contact Us
                         </a>
                     </li>
@@ -82,8 +60,6 @@ const Home = () => {
             </div>
 
             <Corousel />
-
-
 
             <div className="wrap welcome-part">
                 <div className="ac h hd_h2 mb20px">
@@ -198,7 +174,7 @@ const Home = () => {
                                         Email
                                     </div>
                                     <div>
-                                        <a href="mailto:kraftcorporation@gmail.com" target="_blank" style={{ "color": "white" }}>
+                                        <a href="mailto:kraftcorporation@gmail.com" target="_blank" rel='noreferrer' style={{ "color": "white" }}>
                                             kraftcorporation@gmail.com
                                         </a>
                                     </div>
@@ -219,24 +195,9 @@ const Home = () => {
                     </table>
                 </div>
             </div>
+            <HomeQuickEnquiry />
 
-            <div>
-                <h2>Quick Enquiry</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" name="product" placeholder="Product" onChange={handleChange} />
-                    <br />
-                    <input type="text" name="name" placeholder="Name" onChange={handleChange} />
-                    <br />
-                    <input type="email" name="email" placeholder="Email" onChange={handleChange} />
-                    <br />
-                    <input type="tel" name="phone" placeholder="Phone" onChange={handleChange} />
-                    <br />
-                    <textarea name="message" placeholder="Message" onChange={handleChange}></textarea>
-                    <br />
-                    <input type="text" name="country" placeholder="Country" onChange={handleChange} />
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <HomeFooter />
         </>
     );
 };

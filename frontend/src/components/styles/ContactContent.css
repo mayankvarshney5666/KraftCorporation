@@ -1,0 +1,21 @@
+.contact-content {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: 8%;
+}
+
+.contact-details {
+    width: 20%;
+    margin-top: 20px;
+
+}
+
+.contact-form {
+    width: 60%;
+}
+
+.title {
+    color: #cc0000;
+}

@@ -378,3 +378,230 @@ a.mb7px {
 
 
 /* ---------------------------Contact Deatils------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------About Us Css------------------------------- */
+.front,
+.theme2 {
+    background-color: #cc0000;
+}
+
+.theme2 {
+    color: #fff;
+}
+
+.headBg {
+    background-attachment: fixed;
+    background-image: url(//catalog.wlimg.com/templates-images/12569/12573/pattern_n2.png);
+    clear: both;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02) inset, 0 -5px 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+section {
+    display: block;
+}
+
+
+@media screen and (max-width:641px) {
+    .wrap {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .about-head .head {
+        padding-left: 3%;
+    }
+}
+
+@media(min-width: 641px) and (max-width: 980px) {
+
+    /* @media (max-width: 980px) { */
+    .wrap {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 6px;
+    }
+
+    .about-head .head {
+        padding-left: 3%;
+    }
+}
+
+/* } */
+
+@media (max-width: 1150px) {
+    .wrap {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+.wrap {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.headBg.bread-right .page-title-inner {
+    padding: 20px 0px;
+}
+
+.headBg.bread-right .page-title-inner,
+.page-title-inner.bread-right {
+    display: table;
+    width: 100%;
+}
+
+.headBg .page-title-inner {
+    padding: 20px 0px;
+}
+
+.page-title-inner,
+.page-title-inner .breadcrumb,
+.page-title-inner .breadcrumb a {
+    color: #fff;
+}
+
+.fo:before,
+.fo:after {
+    content: "";
+    display: table;
+}
+
+.del_inHdr .headBg.bread-right div.h1 {
+    display: table-cell;
+    width: initial;
+}
+
+.headBg.bread-right .h1,
+.headBg.bread-right .breadcrumb,
+.page-title-inner.bread-right .h1,
+page-title-inner.bread-right .breadcrumb {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+}
+
+.del_inHdr div.h1 {
+    display: table;
+    width: 100%;
+}
+
+.headBg .h1,
+.page-title-inner.head-inner .h1 {
+    margin-bottom: 2px;
+}
+
+.h1,
+.ip .h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    line-height: 1em;
+}
+
+.del_inHdr .headBg.bread-right div.h1 h1 {
+    display: block;
+}
+
+.del_inHdr div.h1 h1,
+.del_inHdr div.h1 .page-rating {
+    display: table-cell;
+}
+
+.headBg .breadcrumb,
+.head-inner .breadcrumb {
+    background: transparent;
+    margin-bottom: 0px;
+    padding: 2px;
+    float: left;
+}
+
+.breadcrumb {
+    background: rgba(0, 0, 0, 0.06);
+    color: #333;
+}
+
+.breadcrumb {
+    position: relative;
+    text-align: left;
+    padding: 5px 10px;
+    text-shadow: none;
+    margin-bottom: 15px;
+}
+
+.small {
+    font-size: 0.9em;
+}
+
+.ar {
+    text-align: right;
+}
+
+.page-title-inner .breadcrumb,
+.page-title-inner .breadcrumb a {
+    color: #fff;
+}
+
+.headBg.bread-right .breadcrumb {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+}
+
+.headBg.bread-right .breadcrumb {
+    text-align: right;
+    float: inherit;
+}
+
+.breadcrumb a,
+.breadcrumb-view a {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.breadcrumb a {
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.uu a {
+    /* text-decoration: underline; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ffv {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.p2px {
+    padding: 2px;
+}
+
+b,
+strong {
+    font-weight: bold !important;
+}
