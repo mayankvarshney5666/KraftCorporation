@@ -1,9 +1,11 @@
 import React from 'react'
 import AboutItem from '../components/AboutItem'
+import NavbarHeader from '../components/NavbarHeader'
 
 function AboutUs() {
     return (
         <>
+            <NavbarHeader />
             <section className="headBg theme2 bread-right">
                 <div className="wrap">
                     <div className="page-title-inner about-head fo">

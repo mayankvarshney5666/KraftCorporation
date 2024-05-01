@@ -1,0 +1,29 @@
+.heeder {
+    background-color: #330000;
+    color: white;
+    height: 37px;
+    gap: 17rem;
+    font-size: x-small;
+}
+
+.heed-r-side {
+    font-size: small;
+    /* gap: -100px; */
+}
+
+.heed-r-side .emeil-btn button {
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 3px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.heed-r-side .smss-btn button {
+    height: 30px;
+    background-color: #cc0000;
+    margin-left: -5px;
+}

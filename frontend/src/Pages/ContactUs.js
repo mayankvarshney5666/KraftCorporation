@@ -1,9 +1,13 @@
 import React from 'react'
 import ContactContent from '../components/ContactContent'
+import NavbarHeader from '../components/NavbarHeader'
+import NavBar from '../components/Navbar'
 
 function ContactUs() {
     return (
         <>
+            <NavbarHeader />
+            <NavBar />
             <section className="headBg theme2 bread-right">
                 <div className="wrap">
                     <div className="page-title-inner about-head fo">

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: start;
-    margin-left: 8%;
+    /* margin-left: 4.5%; */
 }
 
 .contact-details {
@@ -12,10 +12,49 @@
 
 }
 
-.contact-form {
-    width: 60%;
-}
-
 .title {
     color: #cc0000;
+}
+
+/* <-------------------Form--------------------------> */
+.contact-form {
+    width: 55%;
+    background-color: rgba(237, 231, 231, 0.711);
+    padding: 30px 1px 0px 30px;
+    margin-left: -22rem;
+    padding-right: 43px;
+}
+
+#inputPhone {
+    padding-right: 170px;
+}
+
+#country {
+    padding-right: 210px;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.textarea {
+    border: 1px solid black;
+    border-radius: 0;
+    height: 120px;
+    margin-top: -1rem;
+    margin-right: 35px;
+}
+
+.inputCombined {
+    gap: 0rem;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+}
+
+.inputs {
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.send-btn {
+    border-radius: 0;
+    margin: 10px 0 35px 0;
 }

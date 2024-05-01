@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios';
 import './styles/ContactContent.css'
-import HomeQuickEnquiry from './HomeQuickEnquiry';
-const INPUT_CLASS = "mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm";
-const LABEL_CLASS = "block text-sm font-medium text-zinc-700";
-const REQUIRED_CLASS = "text-red-500";
 
 const ContactContent = () => {
+    const [formData, setFormData] = useState({
+        product: '',
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+        country: ''
+    });
+
+    const handleChange = e => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:5000/contactus/', formData);
+            alert('Query submitted successfully!');
+        } catch (error) {
+            console.error('Submission Error  :', error);
+        }
+    };
     return (
         <>
-
             <div className="contact-content">
-
                 <div className="contact-details" style={{ fontSize: "14px" }}>
                     <u className='title b'>
                         Kraft India
@@ -32,38 +49,40 @@ const ContactContent = () => {
                 </div>
 
                 <div className="contact-form">
-                    {/* <div className="max-w-4xl mx-auto p-6 bg-white">
-                        <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
-                        <form>
-                            <div className="grid grid-cols-2 gap-4 mb-4">
-                                <input type="text" placeholder="Name" required />
-                                <input type="email" placeholder="Email" required /><br />
-                                <input type="tel" placeholder="Phone" required />
-                                <div>
+                    <span className='b'>Send us a Message</span>
+                    <br /><br />
+                    <form onSubmit={handleSubmit} className='form'>
+                        <div className="containerClasses inputCombined">
+                            <div>
+                                <input type="text" name="name" className="inputClasses inputs " placeholder="* Name" onChange={handleChange} />
 
-                                    <span className={REQUIRED_CLASS}>*</span>
-                                    <select className={INPUT_CLASS}>
-                                        <option>Select Country</option>
-                                        <option>United States</option>
-                                        <option>Canada</option>
-                                        <option>United Kingdom</option>
-                                    </select>
-                                </div>
                             </div>
-                            <br />
-                            <div className="mb-6">
-                                <span className={REQUIRED_CLASS}>*</span>
-                                <textarea className={INPUT_CLASS} placeholder="Leave a Message for us">
-                                </textarea>
+                            <div>
+                                <input type="email" name="email" className='inputClasses inputs' placeholder="* Email" onChange={handleChange} />
                             </div>
-                            <button type="submit" className="w-full bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-700 focus:outline-none focus:shadow-outline">
-                                Send Message
-                            </button>
-                        </form>
-                    </div> */}
-                    <HomeQuickEnquiry />
+                        </div>
 
+                        <div className="containerClasses inputCombined">
+                            <div className="flexContainerClasses">
+                                <input type="tel" name="phone" id='inputPhone' className="inputClasses inputs input-phone rounded-r-lg" placeholder="* Phone" onChange={handleChange} />
+                            </div>
+                            <div>
+                                <select id="country" name='country' className="selectClasses">
+                                    <option onChange={handleChange}>
+                                        * Select Country
+                                    </option>
+                                </select>
+                                {/* <input type="text" name="country" placeholder="Country"  /> */}
 
+                            </div>
+                        </div>
+                        <div className="mb-4">
+                        </div>
+                        <div className=" d-flex justify-content-center align-items-center">
+                            <textarea name="message" className=" textareaClasses textarea" placeholder="* Leave a Message for us" onChange={handleChange}></textarea>
+                        </div>
+                        <button type="submit" className="buttonClasses send-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </>

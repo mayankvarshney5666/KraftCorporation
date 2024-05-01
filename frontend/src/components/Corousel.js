@@ -25,7 +25,7 @@ const Corousel = () => {
                 >
                     <img src={DUPLEXBOARDS} className='corousel-img' alt="DUPLEX BOARDS" />
 
-                    <h5 className='corousel-txt'>DUPLEX BOARDS</h5>
+                    <h2 className='corousel-txt'>DUPLEX BOARDS</h2>
                 </MDBCarouselItem>
                 <MDBCarouselItem
                     className='w-1 d-block'
