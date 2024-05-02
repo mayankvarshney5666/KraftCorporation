@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+import { MDBCollapse, MDBBtn, } from 'mdb-react-ui-kit';
 import './styles/ContactContent.css'
 
 const ContactContent = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleOpen = () => setIsOpen(!isOpen);
+
     const [formData, setFormData] = useState({
-        product: '',
         name: '',
         email: '',
         phone: '',
-        message: '',
-        country: ''
+        country: '',
+        message: ''
     });
 
     const handleChange = e => {
@@ -20,15 +24,16 @@ const ContactContent = () => {
         e.preventDefault();
         try {
             await axios.post('http://localhost:5000/contactus/', formData);
-            alert('Query submitted successfully!');
+            alert('ThankYou for Contacting Us!');
+            setFormData({ name: '', email: '', phone: '', country: '', message: '' });
         } catch (error) {
-            console.error('Submission Error  :', error);
+            console.error('Submission Error :', error);
         }
     };
     return (
         <>
             <div className="contact-content">
-                <div className="contact-details" style={{ fontSize: "14px" }}>
+                <div className="contact-details" style={{ fontSize: "14px", textAlign: "justify" }}>
                     <u className='title b'>
                         Kraft India
                     </u><br /><br />
@@ -43,9 +48,33 @@ const ContactContent = () => {
                     <br /><br />
                     <span className='b'>Email ID : </span> kraftcorporation@gmail.com
                     <br /><br />
-                    <u className='b'>
-                        View Other Contact Details
-                    </u><br />
+                    <MDBBtn color='tertiary' className='text-black' onClick={toggleOpen} >
+                        <u className='b'>
+                            View Other Contact Details
+                        </u><br />
+                    </MDBBtn>
+                    <MDBCollapse open={isOpen}>
+                        {/* <br /> */}
+                        <u className='title b'>
+                            Reachability
+                        </u><br /><br />
+                        <span className='b'>Delhi Airport : </span>
+                        15KM by Road
+                        <br /><br />
+
+                        <span className='b'>Railway Station : </span>
+                        12KM by Road
+                        <br /><br />
+
+                        <span className='b'>Interstate Bus Stand : </span>
+                        14KM by Road
+                        <br /><br />
+
+                        <span className='b'>Metro : </span>
+                        5 minute Walk from Lajpat Nagar Metro Station
+                        <br />
+                        <MDBBtn onClick={toggleOpen} color='tertiary'>View Less </MDBBtn>
+                    </MDBCollapse>
                 </div>
 
                 <div className="contact-form">
@@ -54,32 +83,41 @@ const ContactContent = () => {
                     <form onSubmit={handleSubmit} className='form'>
                         <div className="containerClasses inputCombined">
                             <div>
-                                <input type="text" name="name" className="inputClasses inputs " placeholder="* Name" onChange={handleChange} />
+                                <input type="text" name="name" className="inputClasses inputs " placeholder="* Name" onChange={handleChange} required />
 
                             </div>
                             <div>
-                                <input type="email" name="email" className='inputClasses inputs' placeholder="* Email" onChange={handleChange} />
+                                <input type="email" name="email" className='inputClasses inputs' placeholder="* Email" onChange={handleChange} required />
                             </div>
                         </div>
 
                         <div className="containerClasses inputCombined">
                             <div className="flexContainerClasses">
-                                <input type="tel" name="phone" id='inputPhone' className="inputClasses inputs input-phone rounded-r-lg" placeholder="* Phone" onChange={handleChange} />
+
+                                <input type="tel" name="phone" id='inputPhone' className="inputClasses inputs input-phone rounded-r-lg" placeholder="* Phone" onChange={handleChange} required />
+
                             </div>
                             <div>
-                                <select id="country" name='country' className="selectClasses">
-                                    <option onChange={handleChange}>
+                                <select id="country" name='country' className="selectClasses" required>
+                                    <option onChange={handleChange} >
                                         * Select Country
                                     </option>
+
+                                    <option value={"India"} onChange={handleChange} >
+                                        India
+                                    </option>
+
+                                    <option value={"United States"} onChange={handleChange} >
+                                        United States
+                                    </option>
                                 </select>
-                                {/* <input type="text" name="country" placeholder="Country"  /> */}
 
                             </div>
                         </div>
                         <div className="mb-4">
                         </div>
                         <div className=" d-flex justify-content-center align-items-center">
-                            <textarea name="message" className=" textareaClasses textarea" placeholder="* Leave a Message for us" onChange={handleChange}></textarea>
+                            <textarea name="message" className=" textareaClasses textarea" placeholder="* Leave a Message for us" onChange={handleChange} required></textarea>
                         </div>
                         <button type="submit" className="buttonClasses send-btn">Send Message</button>
                     </form>

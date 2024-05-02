@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Query = require('../model/queryModel');
+const Contact = require('../model/contactModel')
 
 router.post('/', (req, res) => {
-    const newQuery = new Query(req.body);
-    newQuery.save()
-        .then(contact => {
-            res.status(200).json({ 'inquiry': 'Added successfully' });
+    const newContact = new Contact(req.body);
+    newContact.save()
+        .then(query => {
+            res.status(200).json({ 'contact-us': 'Added successfully to DB' });
         })
         .catch(err => {
             res.status(400).send('Failed to create new record');

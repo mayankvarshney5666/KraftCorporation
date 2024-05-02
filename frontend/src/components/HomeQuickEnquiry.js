@@ -36,39 +36,46 @@ const HomeQuickEnquiry = () => {
                     <div className="containerClasses">
                         <div>
                             <input type="text" name="product" className="inputClasses"
-                                placeholder="Product / Services Looking For " onChange={handleChange} />
+                                placeholder="Product / Services Looking For " onChange={handleChange} required />
 
                         </div>
                         <div>
-                            <input type="text" name="name" className="inputClasses" placeholder="Your Name" onChange={handleChange} />
+                            <input type="text" name="name" className="inputClasses" placeholder="Your Name" onChange={handleChange} required />
 
                         </div>
                     </div>
                     <div className="containerClasses">
                         <div>
 
-                            <input type="email" name="email" className='inputClasses' placeholder="Email" onChange={handleChange} />
+                            <input type="email" name="email" className='inputClasses' placeholder="Email" onChange={handleChange} required />
 
                         </div>
                         <div>
-                            <select id="country" name='country' className="selectClasses">
+                            <select name='country' className="selectClasses country">
                                 <option onChange={handleChange}>United Kingdom</option>
-                            </select>
-                            {/* <input type="text" name="country" placeholder="Country"  /> */}
+                                <option value={"India"} onChange={handleChange}>
+                                    India
+                                </option>
 
+                                <option value={"United States"} onChange={handleChange}>
+                                    United States
+                                </option>
+
+                            </select>
                         </div>
                     </div>
                     <div className="mb-4">
                         <div className="flexContainerClasses">
-                            <select className="inline-flex items-center p-2 text-sm text-zinc-900 bg-zinc-200 border border-r-0 border-zinc-300 rounded-l-lg">
-                                <option value="+44" className='selectClasses'>+44</option></select>
-                            <input type="tel" name="phone" id='inputPhone' className="inputClasses input-phone rounded-r-lg" placeholder="Phone / Mobile" onChange={handleChange} />
+                            <select name='country' className="inline-flex items-center p-2 text-sm text-zinc-900 bg-zinc-200 border border-r-0 border-zinc-300 rounded-l-lg" required>
+                                <option value="+44" >+91</option>
+                            </select>
+                            <input type="tel" name="phone" id='inputPhone' className="inputClasses input-phone rounded-r-lg" placeholder="Phone / Mobile" onChange={handleChange} required />
 
                             {/* <input type="tel" id="phone" placeholder="Phone " /> */}
                         </div>
                     </div>
                     <div className="m5 d-flex justify-content-center align-items-center">
-                        <textarea name="message" rows="4" className=" textareaClasses" placeholder="Leave a Message for us" onChange={handleChange}></textarea>
+                        <textarea name="message" rows="4" className=" textareaClasses" placeholder="Leave a Message for us" onChange={handleChange} required></textarea>
                     </div>
                     <button type="submit" className="buttonClasses">Send Message</button>
                 </form>

@@ -1,0 +1,19 @@
+.jobs {
+    width: 90%;
+    margin: 20px;
+    margin-top: -1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.lhs {
+    /* padding-left: 10%; */
+    width: 70%;
+}
+
+.rhs {
+    /* font-size: x-small; */
+    width: 20%;
+
+}

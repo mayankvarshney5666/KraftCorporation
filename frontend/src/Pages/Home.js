@@ -29,31 +29,31 @@ const Home = () => {
             </div>
 
             <div className="nav sticky-top">
+
                 <ul className='nav-ul'>
                     <li className='home' >
                         <a href="/">
                             Home
                         </a>
-                    </li>|
+                    </li>
                     <li className='about'>
                         <a href="/about us">
-                            About Us
+                            AboutUs
                         </a>
-                    </li>|
+                    </li>
                     <li className='products'>
                         <a href="/products">
                             Products
                         </a>
-                    </li>|
-                    <li className='jobs'>
-
-                        <a href="/">
-                            Current Jobs
+                    </li>
+                    <li className='job'>
+                        <a href="/jobs">
+                            CurrentJobs
                         </a>
-                    </li>|
+                    </li>
                     <li className='contact'>
                         <a href="/contact us">
-                            Contact Us
+                            ContactUs
                         </a>
                     </li>
                 </ul>
@@ -62,15 +62,14 @@ const Home = () => {
             <Corousel />
 
             <div className="wrap welcome-part">
-                <div className="ac h hd_h2 mb20px">
-                    <h1 className="hd_NT ttu">Welcome to our Website</h1>
+                <div className="ac h hd_h2 mtpx mt-5">
+                    <h1 className="hd_NT ttu welcome-txt">Welcome to our Website</h1>
                 </div>
                 <br />
                 <div className="mc horizontal237693 hot bdr0 mt20px">
-
                     <div className="ic mt5px" id="1107_3-1">
                         <div className="slider lh15em ac idv_eqheight">
-                            <ul className=" bxslider237693 no-scroll237693 floatNone dib abc">
+                            <ul className=" bxslider no-scroll237693 floatNone dibb d-flex abc">
                                 <li style={{ "height": "92px;" }}>
                                     <div className="fact-icon w100" style={{ "height": "92px;" }}>
                                         <div className="dtc w60px vat">
@@ -126,7 +125,7 @@ const Home = () => {
                 </div>
 
                 <div className="welcome welcome-txt aj ls large lh17em">
-                    <p style={{ "text-align": "justify;" }}>
+                    <p style={{ textAlign: "justify" }}>
                         <strong>Kraft Corporation</strong> is bracketed with one of the fast-growing Suppliers of a comprehensive assortment of Products inclusive of Duplex Boards, Imported Grey Board, Kraft Paper and White Top Kraft Liner. Our company is driven by the aim to provide premium Paper Rolls all over India. Thus, we have associated with more than 25 paper mills throughout the country. In addition, we have collaborated with several logistics service providers. Backed by this efficient network, we provide Paper Rolls as per requirement at competitive prices and meet delivery deadlines of bulk or retail orders with ease.
                         <b className="dif ml7px">
                             <a href="#!">Read more...</a>

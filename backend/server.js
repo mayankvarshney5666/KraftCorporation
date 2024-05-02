@@ -4,6 +4,7 @@ const cors = require('cors');
 const env = require('dotenv');
 const mongoose = require('mongoose');
 const queryRoute = require('./routes/queryRoute')
+const contactRoute = require('./routes/contactRoute')
 // const Query = require('./model/queryModel')
 
 const app = express();
@@ -20,6 +21,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/KraftCorporation', { useNewUrlParser
 
 // Routes
 app.use('/inquiries', queryRoute);
+app.use('/contactus', contactRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
