@@ -1,0 +1,36 @@
+.nav-header {
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-img {
+    padding: 8px 0;
+    width: 90%;
+}
+
+.nav-row td {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav-row td.active,
+.nav-row td.active a,
+.nav-row td:hover {
+    color: white;
+    background-color: #cc0000;
+}
+
+.nav-row a td {
+    color: black;
+}
+
+.home,
+.products,
+.contact-us,
+.about-us,
+.current-jobs {
+    margin-right: 3px;
+}

@@ -29,8 +29,41 @@ const Home = () => {
             </div>
 
             <div className="nav sticky-top">
-
-                <ul className='nav-ul'>
+                <table className='nav-table'>
+                    <tr>
+                        <a href="/">
+                            <td className='home'>
+                                Home
+                            </td>
+                        </a>
+                        &nbsp; &nbsp;  &nbsp;
+                        | &nbsp; &nbsp; &nbsp;
+                        <td>
+                            <a href="/about us">
+                                AboutUs   &nbsp; &nbsp;  &nbsp;
+                            </a>
+                            | &nbsp; &nbsp; &nbsp;
+                        </td>
+                        <td>
+                            <a href="/products">
+                                Products  &nbsp; &nbsp; &nbsp;
+                            </a>
+                            | &nbsp; &nbsp; &nbsp;
+                        </td>
+                        <td>
+                            <a href="/current jobs">
+                                Current Jobs   &nbsp; &nbsp; &nbsp;
+                            </a>
+                            | &nbsp; &nbsp; &nbsp;
+                        </td>
+                        <td>
+                            <a href="/contact us">
+                                Contact Us
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                {/* <ul className='nav-ul'>
                     <li className='home' >
                         <a href="/">
                             Home
@@ -56,7 +89,7 @@ const Home = () => {
                             ContactUs
                         </a>
                     </li>
-                </ul>
+                </ul> */}
             </div>
 
             <Corousel />

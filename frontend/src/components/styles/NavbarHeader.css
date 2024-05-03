@@ -6,6 +6,12 @@
     font-size: x-small;
 }
 
+@media (max-width:950px) {
+    .heeder {
+        display: none;
+    }
+}
+
 .heed-r-side {
     font-size: small;
     /* gap: -100px; */

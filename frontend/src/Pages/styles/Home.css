@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 
 .gstno,
@@ -44,43 +44,22 @@
     background-color: rgb(208, 13, 13);
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: small;
 }
 
-.nav-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    /* font-size: large; */
-    margin-left: -35%;
+
+.nav-table {
+    margin: 15px 15%;
 }
 
-.nav-ul li {
-    border-right: 1px solid white;
-    padding-right: 10px;
-    border-top-right-radius: 1%;
-    /* border-right-width: 10px; */
-}
-
-.nav-ul li a {
+.nav-table a {
     color: white;
 }
 
-.home,
-.about,
-.products,
-.jobs,
-.contact {
-
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* text-decoration: none; */
-    margin: 15px 30px 0 30px;
-
+.nav-table a:hover {
+    color: black;
 }
 
 

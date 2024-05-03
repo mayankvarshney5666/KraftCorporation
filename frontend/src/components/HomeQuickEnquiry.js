@@ -75,7 +75,7 @@ const HomeQuickEnquiry = () => {
                         </div>
                     </div>
                     <div className="m5 d-flex justify-content-center align-items-center">
-                        <textarea name="message" rows="4" className=" textareaClasses" placeholder="Leave a Message for us" onChange={handleChange} required></textarea>
+                        <textarea name="message" className=" textareaClasses" placeholder="Leave a Message for us" onChange={handleChange} required></textarea>
                     </div>
                     <button type="submit" className="buttonClasses">Send Message</button>
                 </form>

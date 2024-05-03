@@ -2,28 +2,17 @@ import React from 'react'
 import NavbarHeader from '../components/NavbarHeader'
 import SidePanel from '../components/SidePanel'
 import './styles/CurrentJobs.css'
+import NavbarJobs from '../components/NavbarJobs'
+import NavFoot from '../components/NavFoot'
 
 const CurrentJobs = () => {
     return (
         <div>
             <NavbarHeader />
-            {/* <Navbar/> */}
-            Navbar Will be Displayed Here
+            <NavbarJobs />
+            <NavFoot item={"Current Jobs"} />
 
-            <section className="headBg theme2 bread-right">
-                <div className="wrap">
-                    <div className="page-title-inner about-head fo">
-                        <div className="h1 head mt-2 d-flex align-items-center">
-                            <h2>Current Jobs</h2>
-                        </div>
-                        <div className="breadcrumb ar uu small">
-                            <a href="/home" title="Home">Home</a> <b className="ffv p2px"> › </b> Current Jobs
-                        </div>
-                    </div>
-                </div>
-            </section>
             <div className="jobs ">
-
                 <div className="lhs">
                     <div className="jobLists text-center">
                         <div className="noOpenings b ">
