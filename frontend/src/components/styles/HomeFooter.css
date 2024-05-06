@@ -31,20 +31,17 @@
     margin-left: 3.5rem;
     font-weight: bold;
     font-size: 1.125rem;
-    /* or 18px */
     margin-bottom: 1rem;
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    /* gap: 0.5rem; */
-
 }
 
 .link {
     color: rgba(255, 255, 255, 0.7);
-    ;
+
 }
 
 .link:hover {
@@ -52,8 +49,14 @@
 }
 
 .footer-end {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 250px 10px 170px;
+    gap: 10rem;
+    /* padding-bottom: 10px; */
+    margin-bottom: -8px;
+    /* padding: 0 250px 10px 170px; */
 }

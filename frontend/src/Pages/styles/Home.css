@@ -41,6 +41,7 @@
 
 
 .nav {
+    width: 100%;
     background-color: rgb(208, 13, 13);
     color: #fff;
     display: flex;
@@ -299,6 +300,7 @@ strong {
 /* ---------------------------Welcome PartEnds------------------------------- */
 /* ---------------------------Contact Deatils------------------------------- */
 .contact-bg {
+    /* width: 100%; */
     background: #000 url(//catalog.wlimg.com/templates-images/12569/12573/contact-bg.jpg) no-repeat scroll center top;
     background-size: cover;
     color: #fff;
@@ -311,7 +313,21 @@ strong {
         margin: 0 auto;
         padding: 0 15px;
     }
+
 }
+
+@media (max-width: 480px) {
+
+    .contact-bg .formTable tr {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
 
 .pr {
     position: relative;

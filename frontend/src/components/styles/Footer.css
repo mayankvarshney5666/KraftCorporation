@@ -1,0 +1,39 @@
+footer {
+    background: #330000;
+}
+
+.footer {
+    width: 90%;
+    margin-left: 5%;
+    font-size: x-small;
+    color: aliceblue;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navs table {
+    /* width: 100%; */
+    margin-left: 56%;
+
+}
+
+.navs table td {
+    padding: 0.2em;
+}
+
+.hrs {
+    margin-top: -0.5px;
+    margin-bottom: -1px;
+}
+
+@media (max-width:600px) {
+    .navs table {
+        width: 50%;
+        margin-left: 1%;
+    }
+
+}

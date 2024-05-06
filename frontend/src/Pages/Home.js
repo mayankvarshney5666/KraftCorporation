@@ -38,29 +38,29 @@ const Home = () => {
                         </a>
                         &nbsp; &nbsp;  &nbsp;
                         | &nbsp; &nbsp; &nbsp;
-                        <td>
-                            <a href="/about us">
+                        <a href="/about us">
+                            <td>
                                 AboutUs   &nbsp; &nbsp;  &nbsp;
-                            </a>
-                            | &nbsp; &nbsp; &nbsp;
-                        </td>
-                        <td>
-                            <a href="/products">
+                            </td>
+                        </a>
+                        | &nbsp; &nbsp; &nbsp;
+                        <a href="/products">
+                            <td>
                                 Products  &nbsp; &nbsp; &nbsp;
-                            </a>
-                            | &nbsp; &nbsp; &nbsp;
-                        </td>
-                        <td>
-                            <a href="/current jobs">
+                            </td>
+                        </a>
+                        | &nbsp; &nbsp; &nbsp;
+                        <a href="/current jobs">
+                            <td>
                                 Current Jobs   &nbsp; &nbsp; &nbsp;
-                            </a>
-                            | &nbsp; &nbsp; &nbsp;
-                        </td>
-                        <td>
-                            <a href="/contact us">
+                            </td>
+                        </a>
+                        | &nbsp; &nbsp; &nbsp;
+                        <a href="/contact us">
+                            <td>
                                 Contact Us
-                            </a>
-                        </td>
+                            </td>
+                        </a>
                     </tr>
                 </table>
                 {/* <ul className='nav-ul'>

@@ -4,8 +4,6 @@ import KraftPaper from './media/Kraft Paper.jpg'
 import DUPLEXBOARDS from './media/DUPLEX BOARDS.jpg'
 import IMPORTEDGREYBOARDS from './media/IMPORTED GREY BOARDS.jpg'
 import WHITETOPKRAFTLINER from './media/WHITE TOP KRAFT LINER.jpg'
-
-
 import './styles/Corousel.css'
 
 const Corousel = () => {
@@ -24,11 +22,11 @@ const Corousel = () => {
                     itemId={2}
                 >
                     <img src={DUPLEXBOARDS} className='corousel-img' alt="DUPLEX BOARDS" />
+                    <h2 className='corousel-txt '>DUPLEX BOARDS</h2>
 
-                    <h2 className='corousel-txt'>DUPLEX BOARDS</h2>
                 </MDBCarouselItem>
                 <MDBCarouselItem
-                    className='w-1 d-block'
+                    className='w- d-block'
                     itemId={3}
                 >
                     <img src={IMPORTEDGREYBOARDS} className='corousel-img' alt="IMPORTED GREY BOARDS" />
