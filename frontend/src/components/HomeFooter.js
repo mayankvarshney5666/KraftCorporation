@@ -70,8 +70,8 @@ const HomeFooter = () => {
 
                 <div className="mt-1 pt-1 text-center">
                     <p>All Rights Reserved.
-                        <a href="#!" className="link">Kraft India</a>
-                        (<a href="#!" className="link">Terms of Use</a>). Developed & Managed By
+                        <a href="home" className="link">Kraft India</a>
+                        (<a href="about us" className="link">Terms of Use</a>). Developed & Managed By
                         <a href="#!" className="link"> Weblink.In Pvt. Ltd.</a></p>
                 </div>
                 <div className="img-foot">

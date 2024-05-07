@@ -29,8 +29,8 @@ const HomeQuickEnquiry = () => {
     return (
         <section className="max-w-4xl mx-auto p-8 shadow-lg section-quick-enquiry">
 
-            <h2 className="text-2xl font-semibold pt-5 mb-6 text-center">Quick Enquiry</h2>
-            <div className="quick-enquiry d-flex justify-content-center align-items-center text-left">
+            <h2 className="text-2xl pt-5 mb-6 text-center">Quick Enquiry</h2>
+            <div className="quick-enquiry d-flex justify-content-center align-items-center ">
 
                 <form onSubmit={handleSubmit}>
                     <div className="containerClasses">
@@ -56,26 +56,23 @@ const HomeQuickEnquiry = () => {
                                 <option value={"India"} onChange={handleChange}>
                                     India
                                 </option>
-
                                 <option value={"United States"} onChange={handleChange}>
                                     United States
                                 </option>
-
                             </select>
                         </div>
                     </div>
                     <div className="mb-4">
                         <div className="flexContainerClasses">
-                            <select name='country' className="inline-flex items-center p-2 text-sm text-zinc-900 bg-zinc-200 border border-r-0 border-zinc-300 rounded-l-lg" required>
+                            <select name='phone-country' className="selectClasses inline-flex p-2 text-sm bg-zinc-200 border " required>
                                 <option value="+44" >+91</option>
                             </select>
-                            <input type="tel" name="phone" id='inputPhone' className="inputClasses input-phone rounded-r-lg" placeholder="Phone / Mobile" onChange={handleChange} required />
+                            <input type="tel" name="phone" id='input-phone' className="inputClasses input-phone rounded-r-lg" placeholder="Phone / Mobile" onChange={handleChange} required />
 
-                            {/* <input type="tel" id="phone" placeholder="Phone " /> */}
                         </div>
                     </div>
-                    <div className="m5 d-flex justify-content-center align-items-center">
-                        <textarea name="message" className=" textareaClasses" placeholder="Leave a Message for us" onChange={handleChange} required></textarea>
+                    <div className="m5 ">
+                        <textarea name="message" className="txtarea" placeholder="Leave a Message for us" onChange={handleChange} required></textarea>
                     </div>
                     <button type="submit" className="buttonClasses">Send Message</button>
                 </form>

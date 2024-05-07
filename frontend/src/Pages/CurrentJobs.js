@@ -4,6 +4,7 @@ import SidePanel from '../components/SidePanel'
 import './styles/CurrentJobs.css'
 import NavbarJobs from '../components/NavbarJobs'
 import NavFoot from '../components/NavFoot'
+import Footer from '../components/Footer'
 
 const CurrentJobs = () => {
     return (
@@ -26,6 +27,7 @@ const CurrentJobs = () => {
                     <SidePanel />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

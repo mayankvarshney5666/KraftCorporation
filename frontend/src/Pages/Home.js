@@ -1,96 +1,18 @@
 import React from 'react';
-import { MDBIcon } from 'mdb-react-ui-kit';
 import './styles/Home.css';
 import Corousel from '../components/Corousel';
 import TopProducts from '../components/TopProducts';
 import HomeQuickEnquiry from '../components/HomeQuickEnquiry'
 import HomeFooter from '../components/HomeFooter';
+import HomeNavHeader from '../components/HomeNavHeader';
+import HomeNavbar from '../components/HomeNavbar';
 
 const Home = () => {
     return (
         <>
-            <div className="header">
-                <div className="head-img">
-                    <a href="/">
-                        <img src="https://catalog.wlimg.com/1/3166335/other-images/12569-comp-image.png" alt="head-img" />
-                    </a>
-                </div>
-                <div className="head-r-side">
-                    <div className="gstno">
-                        GST No. 07AFRPJ5370E1ZA
-                    </div>
-                    <div className="sms-btn">
-                        <button>  <MDBIcon fas icon="mobile-alt" /> Send SMS </button>
-                    </div>
-                    <div className="email-btn">
-                        <button>  <MDBIcon far icon="envelope" /> Send Email </button>
-                    </div>
-                </div>
-            </div>
+            <HomeNavHeader />
 
-            <div className="nav sticky-top">
-                <table className='nav-table'>
-                    <tr>
-                        <a href="/">
-                            <td className='home'>
-                                Home
-                            </td>
-                        </a>
-                        &nbsp; &nbsp;  &nbsp;
-                        | &nbsp; &nbsp; &nbsp;
-                        <a href="/about us">
-                            <td>
-                                AboutUs   &nbsp; &nbsp;  &nbsp;
-                            </td>
-                        </a>
-                        | &nbsp; &nbsp; &nbsp;
-                        <a href="/products">
-                            <td>
-                                Products  &nbsp; &nbsp; &nbsp;
-                            </td>
-                        </a>
-                        | &nbsp; &nbsp; &nbsp;
-                        <a href="/current jobs">
-                            <td>
-                                Current Jobs   &nbsp; &nbsp; &nbsp;
-                            </td>
-                        </a>
-                        | &nbsp; &nbsp; &nbsp;
-                        <a href="/contact us">
-                            <td>
-                                Contact Us
-                            </td>
-                        </a>
-                    </tr>
-                </table>
-                {/* <ul className='nav-ul'>
-                    <li className='home' >
-                        <a href="/">
-                            Home
-                        </a>
-                    </li>
-                    <li className='about'>
-                        <a href="/about us">
-                            AboutUs
-                        </a>
-                    </li>
-                    <li className='products'>
-                        <a href="/products">
-                            Products
-                        </a>
-                    </li>
-                    <li className='job'>
-                        <a href="/jobs">
-                            CurrentJobs
-                        </a>
-                    </li>
-                    <li className='contact'>
-                        <a href="/contact us">
-                            ContactUs
-                        </a>
-                    </li>
-                </ul> */}
-            </div>
+            <HomeNavbar />
 
             <Corousel />
 
@@ -170,8 +92,8 @@ const Home = () => {
             <TopProducts />
 
             <div className="contact-bg">
-                <div className="wrap ac">
-                    <table className="w100 formTable bdr0 pr zi9">
+                <div className="-wrap ac">
+                    <table className="w-100 formTable bdr0 pr zi9">
                         <tbody>
                             <tr>
                                 <td>
@@ -220,7 +142,7 @@ const Home = () => {
                                     <div className="xlarge b mb7px">
                                         Web
                                     </div>
-                                    <p>www.kraftcorporation.in</p>
+                                    <a href='www.kraftcorporation.in'>www.kraftcorporation.in</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -228,7 +150,6 @@ const Home = () => {
                 </div>
             </div>
             <HomeQuickEnquiry />
-
             <HomeFooter />
         </>
     );

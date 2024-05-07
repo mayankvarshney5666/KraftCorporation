@@ -17,7 +17,7 @@ footer {
 
 .navs table {
     /* width: 100%; */
-    margin-left: 56%;
+    margin-left: 55.5%;
 
 }
 
@@ -29,6 +29,11 @@ footer {
     margin-top: -0.5px;
     margin-bottom: -1px;
 }
+
+.navs table a {
+    color: white;
+}
+
 
 @media (max-width:600px) {
     .navs table {

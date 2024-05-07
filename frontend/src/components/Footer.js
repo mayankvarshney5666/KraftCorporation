@@ -24,33 +24,45 @@ const Footer = () => {
                     <div className='navs '>
                         <table>
                             <tr className=''>
+                                <a href='/home' className="home" >
+                                    <td className="home"> Home </td>
+                                </a>
+                                <td>|</td>
+                                <a href="/about us">
+                                    <td className="about-us">
+                                        About Us
+                                    </td>
+                                </a>
+                                <td>|</td>
+                                <a href="/products">
+                                    <td className="products">
+                                        Products
+                                    </td>
+                                </a>
+                                <td>|</td>
+                                <a href="./current jobs">
+                                    <td className='current-jobs'>Current Jobs</td>
+                                </a>
+                                <td>|</td>
 
-                                <td className="home"> Home </td>
+                                <a href="./contact us">
+                                    <td className="contact-us">
+                                        Contact Us
+                                    </td>
+                                </a>
                                 <td>|</td>
-                                <td className="about-us">
-                                    About Us
-                                </td>
+
+                                <a href="./contact us">
+                                    <td className="enquiry">
+                                        Enquiry
+                                    </td>
+                                </a>
                                 <td>|</td>
-                                <td className="products">
-                                    Products
-                                </td>
-                                <td>|</td>
-                                {/* <td className="jobs">
-                                    Current Jobs
-                                </td> */}
-                                <td className='current-jobs'>Current Jobs</td>
-                                <td>|</td>
-                                <td className="contact-us">
-                                    Contact Us
-                                </td>
-                                <td>|</td>
-                                <td className="enquiry">
-                                    Enquiry
-                                </td>
-                                <td>|</td>
-                                <td className="site-map">
-                                    Site Map
-                                </td>
+                                <a href="/home">
+                                    <td className="site-map">
+                                        Site Map
+                                    </td>
+                                </a>
                                 <td className="rss">
                                     <img src="https://catalog.wlimg.com/templates-images/12569/common/rss_icon.png" alt="RSS IMG" />
                                 </td>
@@ -58,14 +70,13 @@ const Footer = () => {
                         </table>
 
                     </div>
-                    {/* <hr className='hr hr-dotted' /> */}
                     <hr className='hrs' />
                     <div className="footer-end">
 
                         <div className="mt-1 pt-1 text-center">
                             <p>All Rights Reserved.
-                                <a href="#!" className="link">Kraft India</a>
-                                (<a href="#!" className="link">Terms of Use</a>). <br /> Developed & Managed By
+                                <a href="home" className="link">Kraft India</a>
+                                (<a href="about us" className="link">Terms of Use</a>). <br /> Developed & Managed By
                                 <a href="#!" className="link"> Weblink.In Pvt. Ltd. </a></p>
                         </div>
                         <div className="img-foot">
