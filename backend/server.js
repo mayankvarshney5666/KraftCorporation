@@ -5,7 +5,8 @@ const env = require('dotenv');
 const mongoose = require('mongoose');
 const queryRoute = require('./routes/queryRoute')
 const contactRoute = require('./routes/contactRoute')
-// const Query = require('./model/queryModel')
+const smsRoute = require('./routes/smsRoute')
+const emailRoute = require('./routes/emailRoute')
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -22,7 +23,13 @@ mongoose.connect('mongodb://127.0.0.1:27017/KraftCorporation', { useNewUrlParser
 // Routes
 app.use('/inquiries', queryRoute);
 app.use('/contactus', contactRoute);
+app.use('/send-sms', smsRoute)
+app.use('/send-email', emailRoute)
+app.get('/', (req, res) => {
+    res.send("Hello, I'm a Server")
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+

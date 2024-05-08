@@ -11,14 +11,14 @@ const TopProducts = () => {
                 </h2>
             </div>
             <div className="products">
-                <div className="product-row one d-flex justify-content-between align-items-center">
+                <div className="product-row">
 
                     <div className="product product1 ">
                         <div className="product-img">
                             <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/kraft-paper-1261621.jpg" alt="product1-img" />
                         </div>
                         <ul className='product-details'>
-                            <li className='b dif xlarge hd01 lh14em p1'>Kraft Paper</li>
+                            <li className='b dif xlarge hd01 lh14em'>Kraft Paper</li>
                             <li className='mt5px'>
                                 <span className="b">Thickness: </span>
                                 80 GSM TO 450GSM
@@ -47,13 +47,13 @@ const TopProducts = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="product product2 d-flex ">
+                    <div className="product product2 ">
                         <div className="product-img">
 
-                            <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/duplex-boards-1502358144-1310788.jpeg" alt="product1-img" />
+                            <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/duplex-boards-1502358144-1310788.jpeg" alt="product2-img" />
                         </div>
                         <ul className='product-details'>
-                            <li className='b dif xlarge hd01 lh14em p1'>Duplex Boards</li>
+                            <li className='b dif xlarge hd01 lh14em'>Duplex Boards</li>
                             <li className='mt5px'>
                                 <span className="b">Brand Name: </span>Multi Brands
                             </li>
@@ -79,14 +79,13 @@ const TopProducts = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="product-row one d-flex justify-content-between align-items-center">
-
+                <div className="product-row">
                     <div className="product product3">
                         <div className="product-img">
-                            <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/white-top-kraft-liner-1502356680-3211941.jpeg" alt="product1-img" />
+                            <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/white-top-kraft-liner-1502356680-3211941.jpeg" alt="product3-img" />
                         </div>
                         <ul className='product-details'>
-                            <li className='b dif xlarge hd01 lh14em p1'>
+                            <li className='b dif xlarge hd01 lh14em '>
                                 White Top Kraft Liner
                             </li>
                             <li className='mt5px'>
@@ -101,7 +100,8 @@ const TopProducts = () => {
                             <li className='mt5px'>
                                 <span className="b">
                                     Feature: </span>
-                                Box Making                            </li>
+                                Box Making             ]
+                            </li>
                             <li className='mt5px'>
                                 <span className="b">Place of Origin: </span>
                                 India
@@ -118,11 +118,10 @@ const TopProducts = () => {
 
                     <div className="product product4">
                         <div className="product-img">
-
-                            <img src="https://2.wlimg.com/product_images/bc-small/2021/6/3166335/grey-board-1624942383-5875863.jpeg" alt="product1-img" />
+                            <img src="https://2.wlimg.com/product_images/bc-small/2021/6/3166335/grey-board-1624942383-5875863.jpeg" alt="product4-img" />
                         </div>
                         <ul className='product-details '>
-                            <li className='b dif xlarge hd01 lh14em p1'>Grey Rigid Board
+                            <li className='b dif xlarge hd01 lh14em'>Grey Rigid Board
                             </li>
                             <li className='mt5px'>
                                 <span className="b">
@@ -132,7 +131,6 @@ const TopProducts = () => {
                                 <span className="b">
                                     Thickness: </span>
                                 1mm to 4mm
-
                             </li>
                             <li className='mt5px'>
                                 <span className="b">Application:  </span>
@@ -152,9 +150,6 @@ const TopProducts = () => {
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     );
 }

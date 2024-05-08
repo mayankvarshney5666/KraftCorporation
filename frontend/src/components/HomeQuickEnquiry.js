@@ -51,12 +51,12 @@ const HomeQuickEnquiry = () => {
 
                         </div>
                         <div>
-                            <select name='country' className="selectClasses country">
-                                <option onChange={handleChange}>United Kingdom</option>
-                                <option value={"India"} onChange={handleChange}>
+                            <select name='country' className="selectClasses country" onChange={handleChange}>
+                                <option value={"United Kingdom"} >United Kingdom</option>
+                                <option value={"India"}>
                                     India
                                 </option>
-                                <option value={"United States"} onChange={handleChange}>
+                                <option value={"United States"}>
                                     United States
                                 </option>
                             </select>
@@ -64,10 +64,10 @@ const HomeQuickEnquiry = () => {
                     </div>
                     <div className="mb-4">
                         <div className="flexContainerClasses">
-                            <select name='phone-country' className="selectClasses inline-flex p-2 text-sm bg-zinc-200 border " required>
+                            <select name='phone-country' className="selectClasses inline-flex p-2 border " required>
                                 <option value="+44" >+91</option>
                             </select>
-                            <input type="tel" name="phone" id='input-phone' className="inputClasses input-phone rounded-r-lg" placeholder="Phone / Mobile" onChange={handleChange} required />
+                            <input type="tel" name="phone" id='input-phone' className="inputClasses  rounded-r-lg" placeholder="Phone / Mobile" onChange={handleChange} required />
 
                         </div>
                     </div>

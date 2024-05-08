@@ -9,11 +9,40 @@ import {
     MDBModalBody,
     MDBIcon
 } from 'mdb-react-ui-kit';
+import axios from 'axios';
 
 const SendEmail = () => {
-
     const [optSmModal, setOptSmModal] = useState(false);
     const toggleOpenModal = () => setOptSmModal(!optSmModal);
+
+    const [formData, setFormData] = useState({
+        product: '',
+        estQuantity: '',
+        unitType: '',
+        requirement: '',
+        name: '',
+        email: '',
+        phone: '',
+        countryNumber: '',
+    });
+
+    const handleChange = e => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+        try {
+            await axios.post('http://localhost:5000/send-email/', formData);
+            alert('Thank You for sending Email to us!');
+            setFormData({
+                product: '', estQuantity: '', unitType: '', requirement: '', name: '', email: '', countryNumber: '', phone: '',
+            });
+        } catch (error) {
+            console.error('Submission Error :', error);
+        }
+    };
+
     return (
         <>
             <MDBBtn onClick={toggleOpenModal}>
@@ -29,8 +58,8 @@ const SendEmail = () => {
                         </MDBModalHeader>
                         <MDBModalBody>
 
-                            <form className="p-6 send-sms-form rounded-lg shadow-lg max-w-sm mx-auto">
-                                <select className="selectClass" >
+                            <form onSubmit={handleSubmit} className="p-6 send-sms-form  rounded-lg shadow-lg max-w-sm mx-auto">
+                                <select name='product' className="options" onChange={handleChange} >
                                     <option value="Select">
                                         Product / Service Looking For
                                     </option>
@@ -65,28 +94,44 @@ const SendEmail = () => {
 
                                 <div className="quantity d-flex ">
                                     <div className="est">
-                                        <input type="text" placeholder="Est Quantity" className="inputClass" />
+                                        <input type="text" name='estQuantity' placeholder="Est Quantity" className="inputClass" onChange={handleChange} />
                                     </div>
                                     <div className="unit">
-                                        <input type="text" placeholder="Unit Type" className="inputClass" />
+                                        <select name='unitType' className="options" onChange={handleChange}>
+                                            <option value="Unit Type">
+                                                Unit Type
+                                            </option>
+                                            <option value="kg">
+                                                Kilogram (kg)
+                                            </option>
+                                            <option value="g">
+                                                Gram (g)
+                                            </option>
+                                            <option value="ton">
+                                                Tonne (ton)
+                                            </option>
+                                            <option value="quintal">
+                                                Quintal (q)
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
-                                <textarea className="taxtarea text-sm p-3 text-zinc-600 mb-2" placeholder='Describe your requirement in detail. We will get back soon.'>
+                                <textarea name='requirement' className="taxtarea text-sm p-3 text-zinc-600 mb-2" placeholder='Describe your requirement in detail. We will get back soon.' onChange={handleChange} >
                                 </textarea>
 
                                 <div className="space-y-3 mb-4">
-                                    <input type="text" placeholder="Enter Name" className="inputClass" />
-                                    <input type="email" placeholder="Enter Email" className="inputClass" />
+                                    <input type="text" name='name' placeholder="Enter Name" className="inputClass" onChange={handleChange} />
+                                    <input type="email" name='email' placeholder="Enter Email" className="inputClass" onChange={handleChange} />
                                     <div className="d-flex align-items-center">
-                                        <select className="country-number">
+                                        <select name='countryNumber' className="country-number" onChange={handleChange} >
                                             <option value={+91}>+91</option>
                                             <option value={+1}>+1</option>
                                             <option value={+44}>+44</option>
                                         </select>
-                                        <input type="tel" placeholder="Mobile No" className="input-phone inputClass rounded-r-md" />
+                                        <input type="tel" name='phone' placeholder="Mobile No" className="input-phone inputClass rounded-r-md" onChange={handleChange} />
                                     </div>
                                 </div>
-                                <div className="buttonClass text-center">
+                                <div onClick={handleSubmit} className="buttonClass text-center">
                                     Send Email
                                 </div>
                             </form>

@@ -103,7 +103,7 @@
     }
 
     #input-phone {
-        padding: 0.6rem 40% 0.7rem 1rem;
+        padding: 0.6rem 42% 0.7rem 1rem;
     }
 
     .txtarea {
@@ -112,28 +112,38 @@
 
     .selectClasses,
     .selectClasses option {
-        padding: 0.625rem 63.5% 1rem 1rem;
+        padding: 0.625rem 62% 1rem 1rem;
     }
 
     .buttonClasses {
-        margin: 1.5rem 1rem 5rem 2rem;
-        padding: .525rem 0.1rem;
+        margin: 1.5rem 1rem 5rem 30%;
+        /*10rem*/
+        padding: 0.7rem 1.2rem;
     }
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .quick-enquiry form {
         width: 60%;
-        margin-left: -15%;
+        margin-left: -20%;
     }
 
     #input-phone {
-        padding-right: 25.5%;
+        padding-right: 25%;
     }
 
     .selectClasses,
     .selectClasses option {
-        padding: 0.625rem 71% 1rem 1rem;
+        padding: 0.625rem 86% 1rem 1rem;
+    }
+
+    .txtarea {
+        padding-right: 67%;
+    }
+
+    .buttonClasses {
+        margin: 1.5rem 1rem 5rem 7rem;
+        padding: 0.7rem 1.2rem;
     }
 }

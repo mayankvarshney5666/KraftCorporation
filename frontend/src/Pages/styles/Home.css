@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* margin-left: 35px; */
 }
 
 .gstno,
@@ -336,13 +335,13 @@ strong {
         margin-left: -5%;
     }
 
-    /* table.formTable {
+    table.formTable {
         margin-left: 5%;
-    } */
+    }
 
     .formTable td a {
         color: white;
-        margin-left: -50%;
+        margin-left: -30%;
     }
 
 }

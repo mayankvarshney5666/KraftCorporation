@@ -6,10 +6,10 @@ router.post('/', (req, res) => {
     const newContact = new Contact(req.body);
     newContact.save()
         .then(query => {
-            res.status(200).json({ 'contact-us': 'Added successfully to DB' });
+            res.status(200).json({ 'Contacting Details ': 'Added successfully to DB' });
         })
         .catch(err => {
-            res.status(400).send('Failed to create new record');
+            res.status(404).send('Failed to create new record');
         });
 });
 

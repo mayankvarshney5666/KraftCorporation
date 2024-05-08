@@ -5,7 +5,6 @@ import './styles/ContactContent.css'
 
 const ContactContent = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggleOpen = () => setIsOpen(!isOpen);
 
     const [formData, setFormData] = useState({
@@ -30,6 +29,7 @@ const ContactContent = () => {
             console.error('Submission Error :', error);
         }
     };
+
     return (
         <>
             <div className="contact-content">
@@ -98,16 +98,16 @@ const ContactContent = () => {
 
                             </div>
                             <div>
-                                <select id="country" name='country' className="selectClasses" required>
-                                    <option onChange={handleChange} >
+                                <select id="country" name='country' onChange={handleChange} className="selectClasses" required>
+                                    <option value={"Not Selected"} >
                                         * Select Country
                                     </option>
 
-                                    <option value={"India"} onChange={handleChange} >
+                                    <option value={"India"}  >
                                         India
                                     </option>
 
-                                    <option value={"United States"} onChange={handleChange} >
+                                    <option value={"United States"} >
                                         United States
                                     </option>
                                 </select>
