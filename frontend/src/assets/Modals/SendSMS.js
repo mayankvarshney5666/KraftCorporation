@@ -49,7 +49,7 @@ const SendSMS = () => {
                 <MDBModalDialog size='sm' >
                     <MDBModalContent>
                         <MDBModalHeader>
-                            <MDBModalTitle className=''>
+                            <MDBModalTitle className='modal-title'>
                                 Send SMS Enquiry
                             </MDBModalTitle>
                             <MDBBtn className='btn-close' color='none' onClick={toggleOpenModal}></MDBBtn>
@@ -75,7 +75,7 @@ const SendSMS = () => {
                                         <input type="tel" name='phone' minLength={10} maxLength={10} placeholder="Mobile No" required className="input-phone inputClass rounded-r-md" onChange={handleChange} />
                                     </div>
                                 </div>
-                                <button type='submit' className="buttonClass text-center">
+                                <button type='submit' className="buttonClass btn">
                                     Send SMS
                                 </button>
                             </form>

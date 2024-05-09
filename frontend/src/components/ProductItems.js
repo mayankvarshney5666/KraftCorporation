@@ -52,7 +52,7 @@ const ProductItems = () => {
                     <div className="products mt-4 d-flex mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {products.map((product, index) => (
                             <div key={index} className="flex flex-col items-center product-item tada">
-                                <div className="product-img  h-75 w-100">
+                                <div className="product-img  w-100">
                                     <img src={product.imageUrl} alt={product.title} className="w-100 h-auto" />
                                 </div>
 

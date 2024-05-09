@@ -100,7 +100,7 @@ const TopProducts = () => {
                             <li className='mt5px'>
                                 <span className="b">
                                     Feature: </span>
-                                Box Making             ]
+                                Box Making
                             </li>
                             <li className='mt5px'>
                                 <span className="b">Place of Origin: </span>

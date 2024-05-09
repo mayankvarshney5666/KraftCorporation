@@ -1,6 +1,9 @@
 import React from 'react';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import './styles/NavbarHeader.css'
+import SendSMS from '../assets/Modals/SendSMS';
+import SendEmail from '../assets/Modals/SendEmail';
+
 const NavbarHeader = () => {
     return (
         <div>
@@ -13,10 +16,10 @@ const NavbarHeader = () => {
                 </div>
                 <div className="head-r-side heed-r-side">
                     <div className="email-btn emeil-btn">
-                        <button>  <MDBIcon far icon="envelope" />&nbsp; Send Email </button>
+                        <SendEmail />
                     </div>
                     <div className="smss-btn">
-                        <button>  <MDBIcon fas icon="mobile-alt" />&nbsp; Send SMS </button>
+                        <SendSMS />
                     </div>
                 </div>
             </div>

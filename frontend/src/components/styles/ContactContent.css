@@ -9,7 +9,6 @@
 .contact-details {
     width: 20%;
     margin-top: 20px;
-
 }
 
 .title {
@@ -18,7 +17,7 @@
 
 /* <-------------------Form--------------------------> */
 .contact-form {
-    width: 60%;
+    width: 55%;
     background-color: rgba(237, 231, 231, 0.711);
     padding: 30px 1px 0px 30px;
     margin-left: -18rem;
@@ -26,12 +25,14 @@
 }
 
 #inputPhone {
-    padding-right: 170px;
+    padding-right: 195px;
 }
 
-#country {
-    padding-right: 210px;
+.selectClass#country {
+    padding: 12px;
+    padding-right: 200px;
     border: 1px solid black;
+    background-color: #f8f8f8;
     border-radius: 0;
 }
 
@@ -49,8 +50,14 @@
     resize: none;
 }
 
+/* .ic1,
+.ic2 {
+    width: 80%;
+} */
+
 
 .inputCombined {
+    /* width: 80%; */
     gap: 0rem;
     margin-bottom: 0.5rem;
 }
@@ -65,7 +72,7 @@
     margin: 10px 0 35px 0;
 }
 
-@media (max-width:1000px) {
+@media (max-width:950px) {
     .contact-content {
         /* width: 100%; */
         display: flex;
@@ -80,7 +87,7 @@
     }
 
     .contact-form {
-        margin-top: -130px;
+        margin-top: -150px;
         /* margin: 5px; */
         margin-left: 5px;
         width: 100%;
@@ -92,7 +99,7 @@
 
     }
 
-    #country {
+    .selectClass#country {
         width: 100%;
         /* padding-right: 5%; */
     }
@@ -101,8 +108,14 @@
         width: 100%;
     }
 
-    /* .inputCombined {
-        gap: 0rem;
+
+}
+
+@media (max-width:850px) {
+
+    .inputCombined {
+        gap: 0.625rem;
         margin-bottom: 0.5rem;
-    } */
+    }
+
 }

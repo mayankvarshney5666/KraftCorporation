@@ -81,7 +81,7 @@ const ContactContent = () => {
                     <span className='b'>Send us a Message</span>
                     <br /><br />
                     <form onSubmit={handleSubmit} className='form'>
-                        <div className="containerClasses inputCombined">
+                        <div className="containerClasses inputCombined ic1">
                             <div>
                                 <input type="text" name="name" className="inputClasses inputs " placeholder="* Name" onChange={handleChange} required />
 
@@ -91,14 +91,14 @@ const ContactContent = () => {
                             </div>
                         </div>
 
-                        <div className="containerClasses inputCombined">
+                        <div className="containerClasses inputCombined ic2">
                             <div className="flexContainerClasses">
 
                                 <input type="tel" name="phone" id='inputPhone' className="inputClasses inputs input-phone rounded-r-lg" placeholder="* Phone" onChange={handleChange} required />
 
                             </div>
                             <div>
-                                <select id="country" name='country' onChange={handleChange} className="selectClasses" required>
+                                <select id="country" name='country' onChange={handleChange} className="selectClass" required>
                                     <option value={"Not Selected"} >
                                         * Select Country
                                     </option>
@@ -107,7 +107,9 @@ const ContactContent = () => {
                                         India
                                     </option>
 
-                                    <option value={"United States"} >
+                                    <option value={"Pakistan"}>Pakistan</option>
+                                    <option value={"United Kingdom"} >United Kingdom</option>
+                                    <option value={"United States"}>
                                         United States
                                     </option>
                                 </select>

@@ -30,7 +30,7 @@ const Footer = () => {
                                 <td>|</td>
                                 <a href="/about us">
                                     <td className="about-us">
-                                        About Us
+                                        AboutUs
                                     </td>
                                 </a>
                                 <td>|</td>
@@ -41,13 +41,13 @@ const Footer = () => {
                                 </a>
                                 <td>|</td>
                                 <a href="./current jobs">
-                                    <td className='current-jobs'>Current Jobs</td>
+                                    <td className='current-jobs'>CurrentJobs</td>
                                 </a>
                                 <td>|</td>
 
                                 <a href="./contact us">
                                     <td className="contact-us">
-                                        Contact Us
+                                        ContactUs
                                     </td>
                                 </a>
                                 <td>|</td>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <td>|</td>
                                 <a href="/home">
                                     <td className="site-map">
-                                        Site Map
+                                        SiteMap
                                     </td>
                                 </a>
                                 <td className="rss">

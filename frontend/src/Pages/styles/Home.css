@@ -8,14 +8,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    /* padding: 5px; */
 }
 
 .gstno,
 .sms-btn,
 .email-btn {
-    margin: 10px;
-
+    margin: 8px;
 }
 
 .gstno {
@@ -27,8 +26,8 @@
     font-weight: 700;
     border-radius: 25px;
     padding: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
     background-color: black;
 }
@@ -36,6 +35,12 @@
 .head-r-side .sms-btn button {
     background-color: rgb(208, 13, 13);
     border: 0.5px solid red;
+}
+
+@media (max-width:800px) {
+    .head-r-side {
+        display: none;
+    }
 }
 
 
@@ -296,6 +301,30 @@ strong {
     padding: 10px;
 }
 
+.fact-ul {
+    margin-left: 10%;
+    font-size: x-small;
+}
+
+@media (max-width:1000px) {
+    .fact-ul {
+        margin-left: 0%;
+        font-size: x-small;
+    }
+}
+
+@media (max-width:750px) {
+    .fact-ul {
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: -20px;
+        margin-left: 15px;
+    }
+}
+
 /* ---------------------------Welcome PartEnds------------------------------- */
 /* ---------------------------Contact Deatils------------------------------- */
 .contact-bg {
@@ -326,10 +355,10 @@ strong {
 @media (max-width: 500px) {
 
     .contact-bg .formTable tr {
-        /* width: 25%; */
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         font-size: small;
         margin-left: -5%;
@@ -406,8 +435,6 @@ a.mb7px {
 
 
 
-
-
 /* ---------------------------About Us Css------------------------------- */
 .front,
 .theme2 {
@@ -461,7 +488,6 @@ section {
     }
 }
 
-/* } */
 
 @media (max-width: 1150px) {
     .wrap {
@@ -472,7 +498,7 @@ section {
 }
 
 .wrap {
-    width: 1152px;
+    /* width: 1152px; */
     margin: 0 auto;
 }
 
@@ -482,8 +508,9 @@ section {
 
 .headBg.bread-right .page-title-inner,
 .page-title-inner.bread-right {
+    font-size: small;
     display: table;
-    width: 100%;
+    width: 90%;
 }
 
 .headBg .page-title-inner {
@@ -494,6 +521,10 @@ section {
 .page-title-inner .breadcrumb,
 .page-title-inner .breadcrumb a {
     color: #fff;
+}
+
+.nav-foot {
+    margin-left: 10%;
 }
 
 .fo:before,

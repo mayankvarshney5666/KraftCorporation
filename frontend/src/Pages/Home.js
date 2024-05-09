@@ -21,10 +21,10 @@ const Home = () => {
                     <h1 className="hd_NT ttu welcome-txt">Welcome to our Website</h1>
                 </div>
                 <br />
-                <div className="mc horizontal237693 hot bdr0 mt20px">
+                <div className="mc horizontal237693 hot bdr0">
                     <div className="ic mt5px" id="1107_3-1">
                         <div className="slider lh15em ac idv_eqheight">
-                            <ul className=" bxslider no-scroll237693 floatNone dibb d-flex abc">
+                            <ul className="fact-ul bxslider no-scroll237693 floatNone dibb d-flex abc">
                                 <li style={{ "height": "92px;" }}>
                                     <div className="fact-icon w100" style={{ "height": "92px;" }}>
                                         <div className="dtc w60px vat">
@@ -80,10 +80,10 @@ const Home = () => {
                 </div>
 
                 <div className="welcome welcome-txt aj ls large lh17em">
-                    <p style={{ textAlign: "justify" }}>
+                    <p style={{ textAlign: "justify", margin: "30px" }}>
                         <strong>Kraft Corporation</strong> is bracketed with one of the fast-growing Suppliers of a comprehensive assortment of Products inclusive of Duplex Boards, Imported Grey Board, Kraft Paper and White Top Kraft Liner. Our company is driven by the aim to provide premium Paper Rolls all over India. Thus, we have associated with more than 25 paper mills throughout the country. In addition, we have collaborated with several logistics service providers. Backed by this efficient network, we provide Paper Rolls as per requirement at competitive prices and meet delivery deadlines of bulk or retail orders with ease.
                         <b className="dif ml7px">
-                            <a href="#!">Read more...</a>
+                            <a href="/about us">Read more...</a>
                         </b>
                     </p>
                 </div>

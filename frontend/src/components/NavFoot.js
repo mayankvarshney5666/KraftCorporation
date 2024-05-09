@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from 'react';
 
 const NavFoot = (props) => {
     const { item } = props
@@ -7,12 +6,12 @@ const NavFoot = (props) => {
     return (
         <div>
             <section className="headBg theme2 bread-right">
-                <div className="wrap">
+                <div className="nav-foot">
                     <div className="page-title-inner about-head fo">
                         <div className="h1 head mt-2 d-flex align-items-center">
                             <h3>{item}</h3>
                         </div>
-                        <div className="breadcrumb ar uu small">
+                        <div className="breadcrumb nav-passer ar uu small">
                             <a href="/home" title="Home">Home</a> <b className="ffv p2px"> › </b> {item}
                         </div>
                     </div>

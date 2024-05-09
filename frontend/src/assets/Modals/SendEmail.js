@@ -59,7 +59,7 @@ const SendEmail = () => {
                         <MDBModalBody>
 
                             <form onSubmit={handleSubmit} className="p-6 send-sms-form  rounded-lg shadow-lg max-w-sm mx-auto">
-                                <select name='product' className="options" onChange={handleChange} >
+                                <select name='product' className="options" onChange={handleChange} required>
                                     <option value="Select">
                                         Product / Service Looking For
                                     </option>
@@ -92,12 +92,12 @@ const SendEmail = () => {
                                     </option>
                                 </select>
 
-                                <div className="quantity d-flex ">
+                                <div className="quantity d-flex">
                                     <div className="est">
-                                        <input type="text" name='estQuantity' placeholder="Est Quantity" className="inputClass" onChange={handleChange} />
+                                        <input type="text" name='estQuantity' placeholder="Est Quantity" className="inputClass" onChange={handleChange} required />
                                     </div>
                                     <div className="unit">
-                                        <select name='unitType' className="options" onChange={handleChange}>
+                                        <select name='unitType' className="options" onChange={handleChange} required>
                                             <option value="Unit Type">
                                                 Unit Type
                                             </option>
@@ -116,24 +116,26 @@ const SendEmail = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <textarea name='requirement' className="taxtarea text-sm p-3 text-zinc-600 mb-2" placeholder='Describe your requirement in detail. We will get back soon.' onChange={handleChange} >
+                                <textarea name='requirement' className="taxtarea text-sm p-3 text-zinc-600 mb-2" placeholder='Describe your requirement in detail. We will get back soon.' onChange={handleChange} required >
                                 </textarea>
 
                                 <div className="space-y-3 mb-4">
-                                    <input type="text" name='name' placeholder="Enter Name" className="inputClass" onChange={handleChange} />
-                                    <input type="email" name='email' placeholder="Enter Email" className="inputClass" onChange={handleChange} />
+                                    <input type="text" name='name' placeholder="Enter Name" className="inputClass" onChange={handleChange} required />
+                                    <input type="email" name='email' placeholder="Enter Email" className="inputClass" onChange={handleChange} required />
                                     <div className="d-flex align-items-center">
-                                        <select name='countryNumber' className="country-number" onChange={handleChange} >
+                                        <select name='countryNumber' className="country-number" onChange={handleChange} required>
                                             <option value={+91}>+91</option>
+                                            <option value={+92}>+92</option>
                                             <option value={+1}>+1</option>
                                             <option value={+44}>+44</option>
+
                                         </select>
-                                        <input type="tel" name='phone' placeholder="Mobile No" className="input-phone inputClass rounded-r-md" onChange={handleChange} />
+                                        <input type="tel" name='phone' placeholder="Mobile No" className="input-phone inputClass rounded-r-md" onChange={handleChange} required />
                                     </div>
                                 </div>
-                                <div onClick={handleSubmit} className="buttonClass text-center">
+                                <button className="buttonClass btn">
                                     Send Email
-                                </div>
+                                </button>
                             </form>
                         </MDBModalBody>
                     </MDBModalContent>
