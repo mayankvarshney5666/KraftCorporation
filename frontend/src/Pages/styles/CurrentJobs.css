@@ -10,10 +10,28 @@
 .lhs {
     /* padding-left: 10%; */
     width: 70%;
+    /* min-height: 100%; */
 }
 
 .rhs {
     /* font-size: x-small; */
     width: 20%;
+
+}
+
+@media (max-width:750px) {
+    .jobs {
+        flex-direction: column;
+    }
+
+    .lhs {
+        width: 80%;
+
+    }
+
+    .rhs {
+        width: 50%;
+        margin-left: 10%;
+    }
 
 }

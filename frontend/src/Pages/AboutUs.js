@@ -10,7 +10,7 @@ function AboutUs() {
         <>
             <NavbarHeader />
             <Navbar />
-            <NavFoot item={"About Us"} />
+            <NavFoot cat={"About Us"} />
             <AboutItem />
             <Footer />
         </>

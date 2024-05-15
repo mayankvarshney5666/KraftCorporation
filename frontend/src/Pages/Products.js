@@ -11,7 +11,7 @@ const Products = () => {
         <>
             <NavbarHeader />
             <NavbarProducts />
-            <NavFoot item={item} />
+            <NavFoot cat={item} />
             <ProductItems />
             <Footer />
         </>

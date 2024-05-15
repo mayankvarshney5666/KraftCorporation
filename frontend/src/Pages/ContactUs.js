@@ -10,7 +10,7 @@ function ContactUs() {
         <>
             <NavbarHeader />
             <NavbarContact />
-            <NavFoot item={"Contact Us"} />
+            <NavFoot cat={"Contact Us"} />
             <ContactContent />
             <Footer />
         </>

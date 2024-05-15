@@ -15,7 +15,10 @@ const TopProducts = () => {
 
                     <div className="product product1 ">
                         <div className="product-img">
-                            <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/kraft-paper-1261621.jpg" alt="product1-img" />
+                            <a href="/kraft-paper       ">
+
+                                <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/kraft-paper-1261621.jpg" alt="product1-img" title='Kraft Paper' />
+                            </a>
                         </div>
                         <ul className='product-details'>
                             <li className='b dif xlarge hd01 lh14em'>Kraft Paper</li>

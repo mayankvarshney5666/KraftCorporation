@@ -11,7 +11,7 @@ const CurrentJobs = () => {
         <div>
             <NavbarHeader />
             <NavbarJobs />
-            <NavFoot item={"Current Jobs"} />
+            <NavFoot cat={"Current Jobs"} />
 
             <div className="jobs ">
                 <div className="lhs">

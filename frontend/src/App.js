@@ -6,6 +6,7 @@ import ContactUs from './Pages/ContactUs';
 import AboutUs from './Pages/AboutUs';
 import CurrentJobs from './Pages/CurrentJobs';
 import Products from './Pages/Products';
+import KraftPaper from './Pages/Product Pages/KraftPaper';
 
 function App() {
   return (<>
@@ -17,6 +18,8 @@ function App() {
       <Route path="/contact us" element={<ContactUs />} />
       <Route path="/jobs" element={<CurrentJobs />} />
       <Route path="/current jobs" element={<CurrentJobs />} />
+      <Route path="/kraft-paper" element={<KraftPaper />} />
+
     </Routes></>
   );
 }

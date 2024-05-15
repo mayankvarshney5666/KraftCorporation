@@ -23,7 +23,8 @@ const ProductItems = () => {
     const productsRow2 = [
         {
             title: "Kraft Paper",
-            imageUrl: "https://2.wlimg.com/product_images/bc-small/dir_106/3166335/kraft-paper-1261621.jpg"
+            imageUrl: "https://2.wlimg.com/product_images/bc-small/dir_106/3166335/kraft-paper-1261621.jpg",
+            productUrl: "/kraft-paper"
         },
         {
             title: "Duplex Boards",
@@ -66,17 +67,15 @@ const ProductItems = () => {
                     <div className="title-text-part">
                         <h2 className="title product-title">Other Products</h2>
                         <hr />
-                        {/* <p className="title-text">
-                            We are supplying rigid broad according to customer need and specifications.
-                        </p> */}
                     </div>
                     <div className="products mt-4 d-flex mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {productsRow2.map((product, index) => (
                             <div key={index} className="flex flex-col items-center product-item">
                                 <div className="product-img h-75 w-100">
-                                    <img src={product.imageUrl} alt={product.title} className="w-100 h-auto" />
+                                    <a href={product.productUrl}>
+                                        <img src={product.imageUrl} alt={product.title} className="w-100 h-auto" />
+                                    </a>
                                 </div>
-
                                 <p className="mt-3 text-center">{product.title}</p>
                             </div>
                         ))}

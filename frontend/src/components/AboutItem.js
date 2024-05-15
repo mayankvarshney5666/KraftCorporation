@@ -15,7 +15,7 @@ const AboutItem = () => {
     return (
         <>
             <div className="about-item" style={{ "textAlign": "justify" }}>
-                <div className="lhs">
+                <div className="about-lhs">
                     <p>
                         <strong style={style}>Kraft Corporation</strong>
                         <span style={style}> &nbsp;is counted amidst the renowned Suppliers of a wide variety of Paper Reels inclusive of Agro Paper reel, Recycled Kraft Paper Reels and Duplex Board. We are capable of supplying Kraft paper ranging from 12BF to 45 BF and from 80 GSM to450 GSM Kraft paper &amp; Duplex Board throughout pan India. Our aim is to provide premium Kraft Paper Reels all over India. We have associations with more than 25 paper mills throughout the country. Additionally, we have collaborations with several logistics service providers and efficient network. The company was established in the year 2001 by brothers, Shri Dinesh Jain &amp; Suresh Kumar Jain. We are associated with more than 25 paper mills located at Meerut, Moradabad, Muzaffarnagar, Basti, Gorakhpur, Kashipur, Punjab, Haryana, Jammu, Rajasthan, Gujarat, Maharashtra Chhattisgarh, Bihar, West Bengal, Assam, etc., and accordingly we serve our customers located all over India.</span>
@@ -129,7 +129,7 @@ const AboutItem = () => {
 
 
                 </div>
-                <div className="rhs">
+                <div className="about-rhs">
                     <SidePanel />
                 </div>
             </div>
