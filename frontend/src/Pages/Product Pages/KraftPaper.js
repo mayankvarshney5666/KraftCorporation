@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import NavFoot from '../../components/NavFoot'
 import KraftPaperProductDetails from '../../components/ProductPage Components/KraftPaperProductDetails'
 import ProductPageEnquiry from '../../components/ProductPage Components/ProductPageEnquiry'
+import ProductCardSlider from '../../components/ProductPage Components/ProductCardSlider'
 
 const KraftPaper = () => {
     const cat = "Products"
@@ -18,6 +19,7 @@ const KraftPaper = () => {
             <NavFoot cat={cat} arrow={arrow} item={item} />
             <KraftPaperProductDetails />
             <ProductPageEnquiry item={item} />
+            <ProductCardSlider />
             <Footer />
         </>
     )

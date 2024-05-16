@@ -94,58 +94,58 @@ const Home = () => {
             <div className="contact-bg">
                 <div className="-wrap ac">
                     <table className="w-100 formTable bdr0 pr zi9">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div className="contact-icon mb5px">
-                                        <div className="icon-inner">
-                                            <i className="fa fa-location"></i>
-                                        </div>
+                        {/* <tbody> */}
+                        <tr>
+                            <td>
+                                <div className="contact-icon mb5px">
+                                    <div className="icon-inner">
+                                        <i className="fa fa-location"></i>
                                     </div>
-                                    <div className="xlarge b mb7px">
-                                        Location
+                                </div>
+                                <div className="xlarge b mb7px">
+                                    Location
+                                </div>
+                                <p>Lajpat Nagar, Delhi</p>
+                            </td>
+                            <td>
+                                <div className="contact-icon mb5px">
+                                    <div className="icon-inner">
+                                        <i className="fa fa-phone"></i>
                                     </div>
-                                    <p>Lajpat Nagar, Delhi</p>
-                                </td>
-                                <td>
-                                    <div className="contact-icon mb5px">
-                                        <div className="icon-inner">
-                                            <i className="fa fa-phone"></i>
-                                        </div>
+                                </div>
+                                <div className="xlarge b mb7px">
+                                    Mobile
+                                </div>
+                                <p> 08048771316</p>
+                            </td>
+                            <td>
+                                <div className="contact-icon mb5px">
+                                    <div className="icon-inner">
+                                        <i className="fa fa-envelope"></i>
                                     </div>
-                                    <div className="xlarge b mb7px">
-                                        Mobile
+                                </div>
+                                <div className="xlarge b mb7px">
+                                    Email
+                                </div>
+                                <div>
+                                    <a href="mailto:kraftcorporation@gmail.com" target="_blank" rel='noreferrer' style={{ "color": "white" }}>
+                                        kraftcorporation@gmail.com
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div className="contact-icon mb5px">
+                                    <div className="icon-inner">
+                                        <i className="fa fa-desktop"></i>
                                     </div>
-                                    <p> 08048771316</p>
-                                </td>
-                                <td>
-                                    <div className="contact-icon mb5px">
-                                        <div className="icon-inner">
-                                            <i className="fa fa-envelope"></i>
-                                        </div>
-                                    </div>
-                                    <div className="xlarge b mb7px">
-                                        Email
-                                    </div>
-                                    <div>
-                                        <a href="mailto:kraftcorporation@gmail.com" target="_blank" rel='noreferrer' style={{ "color": "white" }}>
-                                            kraftcorporation@gmail.com
-                                        </a>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="contact-icon mb5px">
-                                        <div className="icon-inner">
-                                            <i className="fa fa-desktop"></i>
-                                        </div>
-                                    </div>
-                                    <div className="xlarge b mb7px">
-                                        Web
-                                    </div>
-                                    <a href='www.kraftcorporation.in'>www.kraftcorporation.in</a>
-                                </td>
-                            </tr>
-                        </tbody>
+                                </div>
+                                <div className="xlarge b mb7px">
+                                    Web
+                                </div>
+                                <a href='www.kraftcorporation.in'>www.kraftcorporation.in</a>
+                            </td>
+                        </tr>
+                        {/* </tbody> */}
                     </table>
                 </div>
             </div>

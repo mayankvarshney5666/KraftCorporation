@@ -4,7 +4,7 @@ import { MDBBtn } from 'mdb-react-ui-kit';
 
 const TopProducts = () => {
     return (
-        <div className='top-products mt20px mb20px'>
+        <div className='top-products mt20px'>
             <div className="head-txt mb20px">
                 <h2 className='ac mb20px'>
                     Top Products
@@ -15,8 +15,7 @@ const TopProducts = () => {
 
                     <div className="product product1 ">
                         <div className="product-img">
-                            <a href="/kraft-paper       ">
-
+                            <a href="/kraft-paper">
                                 <img src="https://2.wlimg.com/product_images/bc-small/dir_106/3166335/kraft-paper-1261621.jpg" alt="product1-img" title='Kraft Paper' />
                             </a>
                         </div>

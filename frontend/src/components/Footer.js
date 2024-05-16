@@ -52,7 +52,7 @@ const Footer = () => {
                                 </a>
                                 <td>|</td>
 
-                                <a href="./contact us">
+                                <a href="./home#homeEnquiry">
                                     <td className="enquiry">
                                         Enquiry
                                     </td>

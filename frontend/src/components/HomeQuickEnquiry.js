@@ -27,7 +27,7 @@ const HomeQuickEnquiry = () => {
     };
 
     return (
-        <section className="max-w-4xl mx-auto p-8 shadow-lg section-quick-enquiry">
+        <section className="max-w-4xl mx-auto p-8 shadow-lg section-quick-enquiry" id='homeEnquiry'>
 
             <h2 className="text-2xl pt-5 mb-6 text-center">Quick Enquiry</h2>
             <div className="quick-enquiry d-flex justify-content-center align-items-center ">
