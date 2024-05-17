@@ -4,7 +4,7 @@ import './styles/KraftPaper.css'
 const KraftPaperProductDetails = () => {
     return (
         <>
-            <div className="max-w-4xl  p-4 bg-whitesmoke shadow-md products-details">
+            <div className="max-w-4xl  p-4 bg-whitesmoke shadow-md products-details" id='products-details'>
                 <p className="mb-4 head-text">Product Details</p>
                 <div className="d-flex  product-detail">
                     <div className='w-50 mb-4'>
